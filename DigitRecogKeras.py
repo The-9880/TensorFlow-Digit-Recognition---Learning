@@ -11,7 +11,7 @@ train_images = mnist_train_images.reshape(60000,784)
 test_images = mnist_test_images.reshape(10000, 784)
 
 #   Let's normalize our input data for faster convergence
-#   The input image are all in 8-bit format - 2^8 = 255
+#   The input image are all in 8-bit format - 8 bits gets 255, counting from 0.
 #   So each pixel out of the 784 is is represented by an integer value
 #   Between 0 and 255 inclusive.
 #   We'll normalize these to a range of between 0 and 1 inclusive
